@@ -1,0 +1,14 @@
+# Dependencies
+/frontend/node_modules
+/backend/venv
+
+# Environment Variables
+.env
+
+# Large ML Model Files
+*.pkl
+*.pth
+
+# IDE and OS files
+.DS_Store
+.vscode/
