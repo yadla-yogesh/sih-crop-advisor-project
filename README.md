@@ -1,71 +1,63 @@
-🌱 Agri-Advisor: AI-Powered Agricultural Support System
-Agri-Advisor is a modern, web-based decision support system designed for the Smart India Hackathon. It provides farmers with hyper-localized, data-driven advice to optimize crop selection, diagnose diseases, and receive expert guidance in their native language.
+<div align="center">
+<img src="https://www.google.com/search?q=https://placehold.co/1200x300/6D28D9/FFFFFF%3Ftext%3DAgri-Advisor%26font%3Draleway" alt="Agri-Advisor Banner">
+<h1 align="center">🌱 Agri-Advisor: AI-Powered Agricultural Support System</h1>
+<p align="center">
+A modern, web-based decision support system for farmers, built for the Smart India Hackathon.
+</p>
+</div>
 
-This project was built to address the challenges farmers face, such as lack of access to timely information, language barriers, and the need for personalized agricultural support. By leveraging machine learning and generative AI, Agri-Advisor acts as a digital companion for the modern farmer.
+Agri-Advisor is designed to provide farmers with hyper-localized, data-driven advice to optimize crop selection, diagnose diseases, and receive expert guidance in their native language. By leveraging machine learning and generative AI, Agri-Advisor acts as a digital companion for the modern farmer.
 
 ✨ Core Features
-🤖 AI Crop Recommender: The core feature of the application. It automatically detects the user's location and real-time weather data. Farmers can input their soil test results (N, P, K, pH), and the machine learning model recommends the most suitable crop for their specific conditions.
+🤖 AI Crop Recommender: Automatically detects user location and real-time weather, then recommends the most suitable crop based on soil data (N, P, K, pH).
 
-🌿 AI Leaf Disease Detector: Farmers can upload an image of a plant leaf, and a Vision Transformer (ViT) model will identify the disease. The system then uses the Gemini API to provide a detailed, organic treatment plan.
+🌿 AI Leaf Disease Detector: Uses a Vision Transformer (ViT) model to identify plant diseases from an uploaded image and provides organic treatment plans via the Gemini API.
 
-💬 Multilingual Agri-Bot: A fully interactive chatbot powered by the Gemini API. Farmers can ask any agricultural question via text or voice and receive a concise, conversational answer.
+💬 Multilingual Agri-Bot: A fully interactive chatbot powered by the Gemini API that answers any agricultural question.
 
 🌐 Full Language & Voice Support:
 
-The entire interface is available in English, Hindi, and Telugu.
+Interface available in English, Hindi, and Telugu.
 
-Text-to-Speech: The Agri-Bot's responses can be read aloud in the selected language.
+Text-to-Speech for the bot's responses.
 
-Voice-to-Text: Farmers can speak their questions directly into the Agri-Bot, removing the need to type.
+Voice-to-Text for asking questions without typing.
 
-☀️ Dynamic UI: Includes a sleek dark/light mode theme switcher and a modern, responsive design.
+☀️ Dynamic UI: Includes a sleek dark/light mode switcher and a modern, responsive design.
 
-🛠️ Technology Stack
-This project uses a modern, full-stack approach:
+🛠️ Tech Stack
+<p align="center">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/React-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB" alt="React">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Vite-646CFF%3Fstyle%3Dfor-the-badge%26logo%3Dvite%26logoColor%3Dwhite" alt="Vite">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Tailwind_CSS-38B2AC%3Fstyle%3Dfor-the-badge%26logo%3Dtailwind-css%26logoColor%3Dwhite" alt="Tailwind CSS">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Python-3776AB%3Fstyle%3Dfor-the-badge%26logo%3Dpython%26logoColor%3Dwhite" alt="Python">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Flask-000000%3Fstyle%3Dfor-the-badge%26logo%3Dflask%26logoColor%3Dwhite" alt="Flask">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/scikit--learn-F7931E%3Fstyle%3Dfor-the-badge%26logo%3Dscikit-learn%26logoColor%3Dwhite" alt="Scikit-learn">
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Google_Gemini-8E44AD%3Fstyle%3Dfor-the-badge%26logo%3Dgoogle-gemini%26logoColor%3Dwhite" alt="Google Gemini">
+</p>
 
-Frontend:
+🚀 Getting Started: How to Run This Project
+Follow these steps to get the project up and running on your local machine.
 
-React: For building a fast, interactive, and component-based user interface.
+Step 1: Get the Code
+Clone the repository to your local machine:
 
-Vite: As the next-generation frontend build tool for a blazing-fast development experience.
+git clone [https://github.com/yadla-yogesh/sih-crop-advisor-project.git](https://github.com/yadla-yogesh/sih-crop-advisor-project.git)
+cd sih-crop-advisor-project
 
-Tailwind CSS: For creating a modern, utility-first, and fully responsive design.
+Step 2: Download the ML Models
+This project requires three pre-trained model and data files.
 
-Lucide React: For clean and lightweight icons.
+Crop Recommender Model: Download model.pkl from this repository.
 
-Backend:
+Disease Detection Model: You will need your own trained vit_model.pth file.
 
-Python: The core language for our server and machine learning tasks.
+Disease Class Names: You will need your corresponding class_names.json file.
 
-Flask: A lightweight web framework used to create the API that connects our frontend to the AI models.
+Once downloaded, place all three files inside the backend/ folder.
 
-Scikit-learn: For running the pre-trained Random Forest model for crop recommendation.
-
-PyTorch & Transformers: For loading and running the powerful Vision Transformer (ViT) model for disease detection.
-
-AI & Machine Learning:
-
-Random Forest Classifier: A pre-trained model (.pkl) used for the crop recommendation feature.
-
-Vision Transformer (ViT): A pre-trained deep learning model (.pth) for high-accuracy image classification of plant diseases.
-
-Google Gemini API: Used for generative AI tasks, including providing organic treatment plans and powering the Agri-Bot.
-
-🚀 How to Run This Project Locally
-To set up and run this project on your local machine, please follow these steps.
-
-Prerequisites
-Node.js and npm installed.
-
-Python installed.
-
-A Gemini API Key from Google AI Studio.
-
-1. Clone the Repository
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
-
-2. Set Up the Backend
+Step 3: Set Up the Backend Server
 Navigate to the backend directory.
 
 cd backend
@@ -76,37 +68,30 @@ Create and activate a Python virtual environment.
 py -m venv venv
 .\venv\Scripts\activate
 
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
 Install the required Python packages.
 
-pip install -r requirements.txt
+pip install Flask Flask-Cors scikit-learn pandas torch torchvision transformers pillow python-dotenv google-generativeai
 
-(Note: You will need to create a requirements.txt file or install the packages manually as listed in the development steps).
-
-Create a secret .env file for your API key.
+Create your secret .env file.
 
 Create a file named .env inside the backend folder.
 
 Add your Gemini API key to it:
 
-GEMINI_API_KEY=AIzaSy...your...key...here
+GEMINI_API_KEY=YOUR_API_KEY_HERE
 
-Place your ML model files (model.pkl, vit_model.pth, class_names.json) inside the backend folder.
-
-3. Set Up the Frontend
+Step 4: Set Up the Frontend Application
 Navigate to the frontend directory.
 
-cd ../frontend
+cd ../frontend 
+# (If you are in the backend folder)
 
 Install the npm packages.
 
 npm install
 
-4. Run the Application
-You will need to run both servers simultaneously in two separate terminals.
+Step 5: Run the Application!
+You need to run both servers at the same time in two separate terminals.
 
 Terminal 1 (Backend):
 
